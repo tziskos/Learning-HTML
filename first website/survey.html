@@ -4,17 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey tziskos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <fieldset>
         <h1 id="title">Survey Title</h1>
-    </header>
+    </fieldset>
     <main>
-        <p>This is my first webpage, it is a survey about answering a survey</p>
-        <form id="survery-form">
-            <input id="name" type="text" placeholder="Your name"/>
-            <input id="email" type="text" placeholder="123@onetwothree.com"/>
-            <input id="number" type="number" placeholder="1"/>
+        <p id="description">This is my first webpage, it is a survey with varying inputs, exemplying my skill in HTML and CSS</p>
+        <form id="survey-form">
+            <label id="name-label">Your name:</label>
+                <input required id="name" type="text" placeholder="Your name"/>
+            <label id="email-label">Your email:</label>
+                <input required id="email" type="email" placeholder="123@onetwothree.com"/>
+            <label id="number-label">A number from 1 to 10:</label>
+                <input required id="number" type="number" placeholder="1" min="1" max="10"/>
+            <label id="select-label">Choose a colour from the following options</label>
+                <select id="dropdown">
+                    <option value="Select">Select</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Green</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="orange">Orange</option>
+                </select>
+            <label for="radio">Did you enjoy this form?</label>
+                <input type="radio" name="enjoy" value="yes">Yes</input>
+                <input type="radio" name="enjoy" value="no">No</input>
+            <label for="checkbox">Would you recommend this form to a friend?</label>
+                <input type="checkbox" value="yes">Yes</input>
+                <input type="checkbox" value="no">No</input>
+            <label>Additional Comments</label>
+                <textarea placeholder="Write any additional comments here"></textarea>
+            <button id="submit">Submit</button>
         </form>
     </main>
 </body>
