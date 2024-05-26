@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+}
+
+main {
+    min-height: 80vh;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0px;
+}
+
+fieldset {
+    min-width: 40vw;
+}
